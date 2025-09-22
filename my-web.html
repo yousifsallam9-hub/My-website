@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>يوسف سلام - دروس CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <header>
+        <div class="container">
+
+            <nav>
+                <ul>
+                    <li><a href="#profile">البروفايل</a></li>
+                    <li><a href="#intro">البداية</a></li>
+                    <li><a href="#chapter1">الفصل الأول</a></li>
+                    <li><a href="#chapter2">الفصل الثاني</a></li>
+                    <li><a href="#chapter3">الفصل الثالث</a></li>
+                    <li><a href="#chapter4">الفصل الرابع</a></li>
+                    <li><a href="#chapter5">الفصل الخامس</a></li>
+                    <li><a href="#chapter6">الفصل السادس</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- البروفايل -->
+    <section id="profile">
+        <div class="container">
+            <div class="profile-content">
+                <img src="hhhh.jpg" alt="يوسف سلام" class="profile-img">
+                <div class="profile-text">
+                    <h2>يوسف سلام</h2>
+                    <p>مطور واجهات أمامية متخصص في تصميم وتطوير مواقع ويب تفاعلية </p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-codepen"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- مقدمة -->
+    <section id="intro" class="section">
+        <div class="container">
+            <div class="intro-content">
+                <h2><i class="fas fa-play-circle"></i> البداية مع CSS</h2>
+                <p>مرحباً بك في موقعي الشخصي، حيث يمكنك استكشاف وتجربة جميع خصائص CSS بطريقة تفاعلية. ستجد هنا دروساً عملية مع أمثلة حية لتطبيق كل خاصية.</p>
+                <p>تم تصميم هذا الموقع ليكون مرجعاً عملياً لكل من يريد تعلم CSS من البداية إلى الاحتراف.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفصل الأول: مظهر النصوص والخطوط -->
+    <section id="chapter1" class="section">
+        <div class="container">
+            <h2><i class="fas fa-font"></i> الفصل الأول: مظهر النصوص والخطوط</h2>
+            <div class="columns">
+                <div class="card">
+                    <h3><i class="fas fa-text-height"></i> text-transform</h3>
+                    <p class="text-uppercase">نص بحروف كبيرة (uppercase)</p>
+                    <p class="text-capitalize">نص بحرف كبير في بداية كل كلمة (capitalize)</p>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-underline"></i> text-decoration</h3>
+                    <p class="text-underline">نص بخط تحت (underline)</p>
+                    <p class="text-line-through">نص بخط في المنتصف (line-through)</p>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-align-center"></i> text-align</h3>
+                    <p class="text-center">نص في المنتصف (center)</p>
+                    <p class="text-right">نص إلى اليمين (right)</p>
+                </div>
+            </div>
+            
+            <div class="columns">
+                <div class="card">
+                    <h3><i class="fas fa-text-width"></i> letter-spacing</h3>
+                    <p class="letter-spacing">هذا نص بتباعد بين الحروف</p>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-i-cursor"></i> word-spacing</h3>
+                    <p class="word-spacing">هذا نص بتباعد بين الكلمات</p>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-bars"></i> line-height</h3>
+                    <p class="line-height">هذا نص بتباعد بين الأسطر. هذا نص بتباعد بين الأسطر. هذا نص بتباعد بين الأسطر. هذا نص بتباعد بين الأسطر. هذا نص بتباعد بين الأسطر. هذا نص بتباعد بين الأسطر.</p>
+                </div>
+            </div>
+            
+            <div class="columns">
+                <div class="card">
+                    <h3><i class="fas fa-shadow"></i> text-shadow</h3>
+                    <p class="text-shadow">نص بظل</p>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-font"></i> font-family</h3>
+                    <p class="font-tahoma">نص بخط Tahoma</p>
+                    <p class="font-arial">نص بخط Arial</p>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-bold"></i> font-size & font-weight</h3>
+                    <p class="font-large">نص بحجم كبير</p>
+                    <p class="font-bold">نص بخط عريض</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفصل الثاني: الحدود والهوامش والحشو -->
+    <section id="chapter2" class="section">
+        <div class="container">
+            <h2><i class="fas fa-border-all"></i> الفصل الثاني: الحدود والهوامش والحشو</h2>
+            <div class="columns">
+                <div class="card">
+                    <h3><i class="fas fa-border-style"></i> border-style</h3>
+                    <div class="border-solid">حدود صلبة (solid)</div>
+                    <div class="border-dashed">حدود متقطعة (dashed)</div>
+                    <div class="border-dotted">حدود منقطة (dotted)</div>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-circle"></i> border-radius</h3>
+                    <div class="border-radius">زوايا مدورة (border-radius)</div>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-arrows-alt"></i> padding & margin</h3>
+                    <div class="box padding-example">
+                        <div>عنصر مع حشو داخلي (padding)</div>
+                    </div>
+                    <div class="box margin-example">
+                        <div>عنصر مع هامش خارجي (margin)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="columns">
+                <div class="card">
+                    <h3><i class="fas fa-square"></i> box-shadow</h3>
+                    <div class="box-shadow-example">عنصر بظل</div>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-vector-square"></i> outline</h3>
+                    <div class="outline-example">عنصر مع مخطط خارجي</div>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-table"></i> border-collapse</h3>
+                    <table class="border-collapse">
+                        <tr>
+                            <td>خلية 1</td>
+                            <td>خلية 2</td>
+                        </tr>
+                        <tr>
+                            <td>خلية 3</td>
+                            <td>خلية 4</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفصل الثالث: مظهر القوائم والخلفيات -->
+    <section id="chapter3" class="section">
+        <div class="container">
+            <h2><i class="fas fa-list"></i> الفصل الثالث: مظهر القوائم والخلفيات</h2>
+            <div class="columns">
+                <div class="card">
+                    <h3><i class="fas fa-fill"></i> background-color</h3>
+                    <div class="background-color-example">خلفية ملونة</div>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-image"></i> background-image</h3>
+                    <div class="background-image-example">خلفية صورة</div>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-arrows-alt"></i> background-position</h3>
+                    <div class="background-position-example">خلفية في اليمين</div>
+                </div>
+            </div>
+            
+            <div class="columns">
+                <div class="card">
+                    <h3><i class="fas fa-list-ol"></i> list-style-type</h3>
+                    <ul class="list-style-type-circle">
+                        <li>قائمة غير مرتبة (دائرة)</li>
+                        <li>قائمة غير مرتبة (دائرة)</li>
+                    </ul>
+                    <ol class="list-style-type-upper-roman">
+                        <li>قائمة مرتبة (أرقام رومانية)</li>
+                        <li>قائمة مرتبة (أرقام رومانية)</li>
+                    </ol>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-list"></i> list-style-image</h3>
+                    <ul class="list-style-image">
+                        <li>عنصر قائمة بصورة</li>
+                        <li>عنصر قائمة بصورة</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-paint-roller"></i> linear-gradient</h3>
+                    <div class="gradient-example">خلفية متدرجة</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفصل الرابع: خصائص متنوعة -->
+    <section id="chapter4" class="section">
+        <div class="container">
+            <h2><i class="fas fa-shapes"></i> الفصل الرابع: خصائص متنوعة</h2>
+            <div class="columns">
+                <div class="card">
+                    <h3><i class="fas fa-arrows-alt-h"></i> width & height</h3>
+                    <div class="width-height-example">عنصر بعرض وارتفاع محددين</div>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-text-width"></i> float</h3>
+                    <div class="float-example">
+                        <div class="float-left">عنصر طافٍ لليسار</div>
+                        <p>نص يلتف حول العنصر الطافي. نص يلتف حول العنصر الطافي. نص يلتف حول العنصر الطافي. نص يلتف حول العنصر الطافي.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-map-marker-alt"></i> position</h3>
+                    <div class="position-example">
+                        <div class="position-relative">عنصر بموضع نسبي</div>
+                        <div class="position-absolute">عنصر بموضع مطلق</div>
+                        <div class="position-fixed">عنصر ثابت</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="columns">
+                <div class="card">
+                    <h3><i class="fas fa-border-none"></i> display</h3>
+                    <div class="display-example">
+                        <div>عنصر block</div>
+                        <span>عنصر inline</span>
+                        <div class="display-inline-block">عنصر inline-block</div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-layer-group"></i> z-index</h3>
+                    <div class="z-index-example">
+                        <div class="z-index-1">الطبقة 1</div>
+                        <div class="z-index-2">الطبقة 2</div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-low-vision"></i> opacity</h3>
+                    <div class="opacity-example">
+                        <div>شفافية 100%</div>
+                        <div>شفافية 70%</div>
+                        <div>شفافية 40%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفصل الخامس: التحويلات الهندسية وخصائص الحركة -->
+    <section id="chapter5" class="section">
+        <div class="container">
+            <h2><i class="fas fa-magic"></i> الفصل الخامس: التحويلات الهندسية وخصائص الحركة</h2>
+            <div class="columns">
+                <div class="card">
+                    <h3><i class="fas fa-sync"></i> transform: rotate</h3>
+                    <div class="transform-rotate">عنصر تم تدويره</div>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-expand"></i> transform: scale</h3>
+                    <div class="transform-scale">عنصر تم تكبيره</div>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-arrows-alt"></i> transform: translate</h3>
+                    <div class="transform-translate">عنصر تم نقله</div>
+                </div>
+            </div>
+            
+            <div class="columns">
+                <div class="card">
+                    <h3><i class="fas fa-exchange-alt"></i> transition</h3>
+                    <div class="transition-example">مرر فوقي لرؤية الانتقال</div>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-film"></i> @keyframes</h3>
+                    <div class="keyframes-example">حركة متكررة</div>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-play-circle"></i> animation</h3>
+                    <div class="animation-example">تحريك العنصر</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفصل السادس: الوسوم الزائفة -->
+    <section id="chapter6" class="section">
+        <div class="container">
+            <h2><i class="fas fa-ghost"></i> الفصل السادس: الوسوم الزائفة</h2>
+            <div class="columns">
+                <div class="card">
+                    <h3><i class="fas fa-mouse-pointer"></i> :hover</h3>
+                    <div class="hover-example">مرر فوقي</div>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-hand-pointer"></i> :active</h3>
+                    <div class="active-example">انقر عليّ</div>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-keyboard"></i> :focus</h3>
+                    <input type="text" class="focus-example" placeholder="اضغط هنا للتركيز">
+                </div>
+            </div>
+            
+            <div class="columns">
+                <div class="card">
+                    <h3><i class="fas fa-plus"></i> ::before & ::after</h3>
+                    <div class="before-after-example">نص مع محتوى مضاف</div>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-text-height"></i> ::first-letter</h3>
+                    <p class="first-letter-example">هذه فقرة حيث الحرف الأول مميز بحجم أكبر ولون مختلف.</p>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-minus"></i> ::first-line</h3>
+                    <p class="first-line-example">هذه فقرة حيث السطر الأول مميز بخط عريض. هذا النص يواصل في السطر الثاني بدون أي تأثير خاص. هذا النص يواصل في السطر الثاني بدون أي تأثير خاص.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>تم إعداد هذا الموقع بواسطة يوسف سلام</p>
+            <p>جميع الحقوق محفوظة &copy; 2025</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
